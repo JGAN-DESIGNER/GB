@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jgan-designer"
+version = "1.0.0"
+description = "Portfólio Premium de Gabriel Alves (JGAN) - Designer Esportivo"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Proprietary"}
+authors = [
+    {name = "Gabriel Alves", email = "jgandesigner@gmail.com"}
+]
+keywords = ["design", "sports", "portfolio", "streamlit"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Intended Audience :: End Users/Desktop",
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+dependencies = [
+    "streamlit>=1.40.0",
+    "Pillow>=10.2.0",
+    "requests>=2.31.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/JGAN-DESIGNER/GB"
+Repository = "https://github.com/JGAN-DESIGNER/GB.git"
+Issues = "https://github.com/JGAN-DESIGNER/GB/issues"
