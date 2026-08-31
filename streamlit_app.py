@@ -395,9 +395,9 @@ with hero_col1:
 with hero_col2:
     try:
         profile_img = load_image("minhafoto.png")
-        st.image(profile_img, use_column_width=True, caption=None)
-    except:
-        st.image(create_placeholder_image(400, 500, "minhafoto.png"), use_column_width=True)
+        st.image(profile_img, use_container_width=True, caption=None)
+    except Exception:
+        st.image(create_placeholder_image(400, 500, "minhafoto.png"), use_container_width=True)
 
 # ============================================================================
 # ABOUT SECTION
@@ -462,9 +462,9 @@ for idx, img_name in enumerate(portfolio_images):
     with cols[idx % 3]:
         try:
             portfolio_img = load_image(img_name)
-            st.image(portfolio_img, use_column_width=True, caption=f"Trabalho {idx+1}")
-        except:
-            st.image(create_placeholder_image(400, 300, img_name), use_column_width=True, caption=f"Trabalho {idx+1}")
+            st.image(portfolio_img, use_container_width=True, caption=f"Trabalho {idx+1}")
+        except Exception:
+            st.image(create_placeholder_image(400, 300, img_name), use_container_width=True, caption=f"Trabalho {idx+1}")
 
 # ============================================================================
 # CONTACT SECTION
